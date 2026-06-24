@@ -1,0 +1,17 @@
+/* Only works if Debug is set to True in the settings.py */
+
+/* But to deploy the app, Debug has to be False to not show it to the user */
+
+/* In which case, we have to create a static folder and css in the father my_tennis_club folder instead of the child */
+
+/* This father is called the root, which we will certify in the settings */
+
+
+body {
+  background-color: lightblue;
+  font-family: verdana;
+
+
+h1 {
+  color : red;
+}
