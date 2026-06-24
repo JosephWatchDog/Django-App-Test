@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+   <!-- Celle créée avec Bootstrap dans le Global Statics : -->
+  <link rel="stylesheet" href="{% static 'monBootstrap.css' %}">
+
+  <title>{% block title %}{% endblock %}</title>
+
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+
+</head>
+<body>
+  
+  <!-- La stylesheet classique facile du static local : -->
+  <!-- <link rel="stylesheet" href="{% static 'myfirst.css' %}"> -->
+
+  <div class="topnav">
+    <a href="/">HOME</a> |
+    <a href="/members">MEMBERS</a>
+  </div>
+
+{% block content %}
+{% endblock %}
+
+{% include "mymenu.html" with me="JOSEPH" sponsor="W3SCHOOLS" %}
+
+</body>
+</html>
